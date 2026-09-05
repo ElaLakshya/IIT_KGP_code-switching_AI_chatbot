@@ -1,0 +1,41 @@
+# Secrets -- never commit real API keys
+.env
+.env.local
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+iit_venv/
+
+# LiveKit / agent runtime
+*.log
+.livekit/
+
+# Rime / audio scratch output (if you save test clips locally)
+*.wav
+*.mp3
+*.pcm
+!agent/tests/fixtures/*.wav
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Jupyter (if you use notebooks for testing segmentation/eval)
+.ipynb_checkpoints/
